@@ -1,37 +1,35 @@
 <script setup>
-import Headers from '@/components/Header.vue'
+import TheHeaders from './components/TheHeader.vue'
 import Sidebar from './components/ProjectList.vue'
 import ProjectList from './components/ProjectList.vue'
-import Form from './components/Form.vue'
+import TheForm from './components/TheForm.vue'
 </script>
 
 <template>
   
- </main>
+<main>
 
-<Header/>
-<Sidebar/>
+<TheHeader/>
+
     
   
     <div class="container-fluid">
       <div class="row">
         
+        <Sidebar/>
 
         <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-          <div
-            class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom"
-          >
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
             <h1 class="h2">Mes Projets</h1>
           </div>
 
           <ProjectList/>
 
-          <Form/>
-</main>
+          <TheForm/>
+        </main>
         
       </div>
     </div>
-
 </main>
 </template>
 
